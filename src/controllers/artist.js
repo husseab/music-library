@@ -31,11 +31,12 @@ exports.create = async (req, res) => {
       exports.readById = async (req, res) => {
         const db = await getDb();
         const { artistId } = req.params;
-      
+        console.log(req.params, "<-req.params");
+        console.log(artistId, "<-artistId");
         const [[artist]] = await db.query('SELECT * FROM Artist WHERE id = ?', [
           artistId,
         ]);
-      
+      console.log(artist, "<-artist");
         if (!artist) {
           res.sendStatus(404);
         } else {
