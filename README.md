@@ -1,6 +1,6 @@
 # Music library
 
-This is a music library app desgined to store music and associated artist records in a database.
+This is a music library app desgined to store artist records and associated albums in a database.
 
 
 ## Dependencies used
