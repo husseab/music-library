@@ -2,11 +2,10 @@
 
 This is a music library app desgined to store artist records and associated albums in a database.
 
-
 ## Dependencies used
 
-  - "express": "^4.18.2",
-  - "mysql2": "^2.3.3"
+- "express": "^4.18.2",
+- "mysql2": "^2.3.3"
 
 ### DevDependencies used
 
@@ -26,29 +25,23 @@ This is a music library app desgined to store artist records and associated albu
 
 This app requires a MySQL database. Run
 
-
-
-```console
+```
 $ npm i -S mysql2
 ```
 
-
-
 in your terminal.
 
-Run 
+Run
 
-
-```console
+```
 $ npm i
 ```
-
 
 to install dependencies.
 
 Create .env:
 
-```console
+```
 DB_PASSWORD=password
 DB_NAME=music_LIBRARY_DEV
 DB_USER=root
@@ -59,7 +52,7 @@ PORT=3000
 
 and .env.test files in the root directory:
 
-```console
+```
 DB_PASSWORD=password
 DB_NAME=music_LIBRARY_TEST
 DB_USER=root
@@ -68,17 +61,16 @@ DB_PORT=3307
 PORT=3000
 ```
 
+Set up docker container with
 
-Set up docker container with 
-
-```console
+```
 docker run -d -p 3307:3306 --name music_library_mysql -e MYSQL_ROOT_PASSWORD=password mysql
 
 ```
 
-Download the following dependencies: 
+Download the following dependencies:
 
-```console
+```
 $ npx eslint --init
 $ npx prettier --write .
 $ npm i -S express
@@ -90,9 +82,8 @@ $ npm i -D mocha chai supertest
 
 ## Using the app
 
-To start the app on your localhost use 
-```console
-$ npm start 
+To start the app on your localhost use
+
 ```
-
-
+$ npm start
+```
