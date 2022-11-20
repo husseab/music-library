@@ -1,6 +1,6 @@
 # Music library
 
-This is a music library app desgined to store artist records and associated albums in a database.
+This is a music library API desgined to store artist records and associated albums in a database.
 
 ## Dependencies used
 
@@ -23,7 +23,7 @@ This is a music library app desgined to store artist records and associated albu
 
 ## Running the app
 
-This app requires a MySQL database. Run
+This API requires a MySQL database. Run
 
 ```
 $ npm i -S mysql2
